@@ -59,7 +59,7 @@ def compare_pdf_images(pdf1_path, pdf2_path, output_path):
     pdf2.close()
 
     # Save combined output image
-    #cv2.imwrite(output_path, img1)
+    cv2.imwrite(output_path, img1)
 
 # Streamlit app
 def app():
