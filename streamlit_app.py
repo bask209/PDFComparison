@@ -1,7 +1,7 @@
 """
 Module that runs streamlit app. Uses OpenCV, PyMuPDF, Numpy and Streamlit.
 
-When running the app use command "streamlit run ./PDFComparison.py"
+When running the app use command "streamlit run ./streamlit_app.py"
 
 """
 import cv2
