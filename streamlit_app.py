@@ -9,6 +9,17 @@ import fitz
 import numpy as np
 import streamlit as st
 
+documentation_string=r'''
+Please, before using this software, have a look at the documentation following these links: 
+
+[General apps documentation](https://vidabasca.com/appsyoucanuse)
+
+[PDF Comparison app documentation](https://vidabasca.com/appsyoucanuse/pdf-comparison-app)
+'''
+
+st.markdown(documentation_string, unsafe_allow_html=True)
+
+
 def compare_pdf_images(pdf1_path, pdf2_path, output_path):
     pdf1 = fitz.open(stream=pdf1_path.read(),filetype="pdf")
     pdf2 = fitz.open(stream=pdf2_path.read(),filetype="pdf")
